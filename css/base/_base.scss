@@ -1,12 +1,23 @@
-*
-*::after,
+* *::after,
 *::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 
 html {
   font-size: 10px; // for easier conversion to rem
+}
+
+body {
+  padding: 3rem 20rem;
+  background-color: $color-primary-2;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
 }

@@ -1,0 +1,30 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    background-image: -webkit-gradient(linear, left top, right bottom, from($color-accent-cyan), to($color-accent-blue));
+    background-image: linear-gradient(to bottom right, $color-accent-cyan, $color-accent-blue);
+    display: inline-block;
+    border-radius: 3rem;
+    padding: 1.5rem 3rem;
+    margin: 5rem auto;
+  }
+}
+
+.btn-text {
+  &,
+  &:link,
+  &:visited {
+    border-bottom: 1px solid $color-accent-cyan;
+    padding: 0.8rem 0.8rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    color: $color-neutral-white;
+    background-image: -webkit-gradient(linear, left top, right bottom, from($color-accent-cyan), to($color-accent-blue));
+    background-image: linear-gradient(to bottom right, $color-accent-cyan, $color-accent-blue);
+    border-bottom: 1px solid $color-accent-cyan;
+  }
+}

@@ -1,0 +1,130 @@
+.section-intro {
+  height: 95vh;
+  text-align: center;
+  padding: 0 15rem;
+
+
+// &__background {
+//   background-image: url("./images/bg-curly-desktop.svg");
+//   background-size: cover;
+// }
+
+  &__image {
+    margin-top: 2rem;
+    height: 50rem;
+  }
+
+  .heading-secondary {
+    font-weight: 400;
+  }
+}
+
+.section-features {
+  height: 75vh;
+  text-align: center;
+  padding: 0 15rem;
+
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+
+    &__item {
+      margin-top: 7rem;
+      width: 35%;
+
+      &--icon {
+        height: 7rem;
+      }
+    }
+  }
+}
+
+.section-productive {
+  padding: 7rem 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .productive__image-box {
+    width: 45%;
+
+    &--img {
+      width: 100%;
+    }
+  }
+
+  .productive__text-box {
+    width: 45%;
+  }
+}
+
+.section-testimonials {
+  padding: 7rem 15rem;
+
+  .quote-mark {
+    background-image: url("./images/bg-quotes.png");
+    background-repeat: no-repeat;
+    padding-bottom: 1.2rem;
+  }
+
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    &__box {
+      width: 27%;
+      background-color: $color-primary-4;
+      padding: 3rem 2rem;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 1rem 2rem $color-box-shadow;
+      box-shadow: 0 1rem 2rem $color-box-shadow;
+
+      &--text {
+        font-size: 1.5rem;
+        line-height: 150%;
+      }
+
+      &--profile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+
+      &--profile-img {
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        height: 7rem;
+        width: 7rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .signup {
+    width: 75%;
+    text-align: center;
+    background-color: $color-primary-1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1rem 2rem $color-box-shadow;
+            box-shadow: 0 1rem 2rem $color-box-shadow;
+            margin: 7rem auto 0;
+  }
+}

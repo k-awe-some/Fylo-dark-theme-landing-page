@@ -1,0 +1,25 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+
+  &__menu {
+    list-style: none;
+    color: $color-neutral-white;
+
+    &--item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 7rem;
+      }
+    }
+
+    &--link {
+      color: $color-neutral-white;
+    }
+  }
+}

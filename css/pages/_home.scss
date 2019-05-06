@@ -1,13 +1,10 @@
 .section-intro {
   height: 95vh;
   text-align: center;
-  padding: 0 15rem;
-
-
-// &__background {
-//   background-image: url("./images/bg-curly-desktop.svg");
-//   background-size: cover;
-// }
+  padding: 0 15rem; // &__background {
+  //   background-image: url("./images/bg-curly-desktop.svg");
+  //   background-size: cover;
+  // }
 
   &__image {
     margin-top: 2rem;
@@ -119,12 +116,40 @@
   }
 
   .signup {
-    width: 75%;
+    width: 60%;
     text-align: center;
     background-color: $color-primary-1;
     border-radius: 3px;
     -webkit-box-shadow: 0 1rem 2rem $color-box-shadow;
-            box-shadow: 0 1rem 2rem $color-box-shadow;
-            margin: 7rem auto 0;
+    box-shadow: 0 1rem 2rem $color-box-shadow;
+    margin: 7rem auto 0;
+    padding: 3rem 8rem;
+
+    &__form {
+      &--email {
+        display: inline-block;
+        width: 30rem;
+        border-radius: 3rem;
+        margin-right: 2rem;
+        padding: 1.5rem 3rem;
+        border: none;
+
+        &::-webkit-input-placeholder {
+          color: $color-neutral-grey;
+        }
+
+        &::-moz-placeholder {
+          color: $color-neutral-grey;
+        }
+
+        &::-ms-input-placeholder {
+          color: $color-neutral-grey;
+        }
+
+        &::placeholder {
+          color: $color-neutral-grey;
+        }
+      }
+    }
   }
 }

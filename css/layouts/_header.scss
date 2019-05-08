@@ -1,10 +1,14 @@
 .header {
+  background-color: $color-primary-1;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-pack: distribute;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  z-index: 1000;
+
 
   &__menu {
     list-style: none;
@@ -20,6 +24,15 @@
 
     &--link {
       color: $color-neutral-white;
+      border-bottom: 1.5px solid transparent;
+      padding-bottom: 1rem;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+
+      &:hover {
+        border-bottom: 1.5px solid $color-accent-fuschia;
+        padding-bottom: 1rem;
+      }
     }
   }
 }

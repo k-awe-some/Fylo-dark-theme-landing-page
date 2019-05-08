@@ -1,25 +1,24 @@
 .section-intro {
   height: 95vh;
   text-align: center;
-  padding: 0 15rem; // &__background {
-  //   background-image: url("./images/bg-curly-desktop.svg");
-  //   background-size: cover;
-  // }
+  padding: 0 35rem;
+  background-color: $color-primary-1;
+  background-image: url("../images/bg-curvy-desktop.svg"); // $color-primary-2
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 
   &__image {
-    margin-top: 2rem;
     height: 50rem;
   }
 
-  .heading-secondary {
-    font-weight: 400;
-  }
 }
 
 .section-features {
   height: 75vh;
   text-align: center;
-  padding: 0 15rem;
+  padding: 0 35rem;
+  background-color: $color-primary-2;
 
   .features {
     display: -webkit-box;
@@ -41,7 +40,8 @@
 }
 
 .section-productive {
-  padding: 7rem 15rem;
+  padding: 7rem 35rem;
+  background-color: $color-primary-2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,10 +66,13 @@
 }
 
 .section-testimonials {
-  padding: 7rem 15rem;
+  height: 50vh;
+  padding: 7rem 35rem;
+  background-color: $color-primary-2;
+  position: relative;
 
   .quote-mark {
-    background-image: url("./images/bg-quotes.png");
+    background-image: url("../images/bg-quotes.png");
     background-repeat: no-repeat;
     padding-bottom: 1.2rem;
   }
@@ -81,6 +84,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
 
     &__box {
       width: 27%;
@@ -116,14 +120,19 @@
   }
 
   .signup {
-    width: 60%;
+    width: 40%;
     text-align: center;
     background-color: $color-primary-1;
     border-radius: 3px;
     -webkit-box-shadow: 0 1rem 2rem $color-box-shadow;
     box-shadow: 0 1rem 2rem $color-box-shadow;
-    margin: 7rem auto 0;
+    margin: 17rem auto 0;
     padding: 3rem 8rem;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    -webkit-transform: translate(-50%, 10%);
+    transform: translate(-50%, 10%);
 
     &__form {
       &--email {
@@ -133,6 +142,11 @@
         margin-right: 2rem;
         padding: 1.5rem 3rem;
         border: none;
+
+        &:focus {
+          outline: none;
+
+        }
 
         &::-webkit-input-placeholder {
           color: $color-neutral-grey;

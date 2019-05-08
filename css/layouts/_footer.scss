@@ -1,13 +1,16 @@
 .footer {
+  background-color: $color-primary-3;
+  // width: 100vw;
   &__content {
+    padding-top: 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
-  // FLEX ITEMS
+  // FLEX ITEMS WIDTHS
   &__location {
     width: 40%;
   }
@@ -17,21 +20,42 @@
   }
 
   &__nav {
-    width: 10%;
+    width: 7%;
   }
 
   &__social {
-    // width: 15%;
+    width: 15%;
   }
   // FLEX ITEMS CONTENT
   &__contact {
     position: relative;
-    height: 2.7rem;
+    height: 2.7rem; // to match with .paragraph { line-height }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-accent-fuschia;
+      cursor: pointer;
+    }
+    // hover on links
+    a {
+      color: $color-neutral-white;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-accent-fuschia;
+        cursor: pointer;
+      }
+    }
 
     &--icon {
+      font-size: 2rem;
       position: absolute;
       top: 0;
       left: 0;
+      -webkit-transform: translate(0, 20%);
+      transform: translate(0, 20%);
     }
 
     &--text {
@@ -46,23 +70,31 @@
     list-style: none;
     padding-left: 0;
     margin: 0 auto;
-
   }
 
-  &__nav-item {
-    height: 2.7rem;
-  }
 
   &__nav-link {
     color: $color-neutral-white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-accent-fuschia;
+    }
   }
 
   &__social-icon {
-    width: 3rem;
+    font-size: 3rem;
     color: $color-neutral-white;
 
     &:not(:last-child) {
       margin-right: 2rem;
+    }
+
+    &:hover {
+      color: $color-accent-fuschia;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
     }
   }
 }
